@@ -1,14 +1,13 @@
-pipeline { 
+pipeline {
   agent { 
-    label  'Linux' 
+    label 'Linux' 
   } 
-  étapes { 
+  stages { 
     stage ('Script') { 
-      pas { 
-        sh 'chmod + x test_mb_jenkins.sh' 
+      steps { 
+        sh 'chmod +x test_mb_jenkins.sh' 
         sh './test_mb_jenkins.sh' 
       } 
     } 
- 
   } 
 } 
