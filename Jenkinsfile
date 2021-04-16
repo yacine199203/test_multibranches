@@ -1,6 +1,6 @@
 pipeline { 
   agent { 
-    étiquette 'Linux' 
+    label  'Linux' 
   } 
   étapes { 
     stage ('Script') { 
